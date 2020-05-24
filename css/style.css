@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+/* Variales */
+:root{
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+/* Espaciado */
+--space: 10px;
+/* Tipografía */
+--normal: 12px;
+/* Box shadow */
+--box: 0 0 2px 1px #E6E5E9;
+}
+/* Variables */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    background-color: var(--green-color);
+    padding: var(--space);
+    display: flex;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:var(--white-color);
+}
+
+/* Main section */
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    height: 50px;
+    display: flex;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+.img_content{
+    text-align: center;
+}
+
+.products .product .content p{
+    text-align: justify;
+}
+
+.button{
+    background-color: var(--green-color);
+    border: none;
+    color: var(--white-color);
+    width: 100%;
+    padding: var(--space);
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: var(--normal);
+}
+
+.button:hover{
+    background-color: #5E9E22;
+}
+/* Fin main section */
+
+/* Features section */
+
+.features{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature{
+    padding: var(--space);
+    max-width: 300px;
+}
+
+.feature_content{
+    padding: 5%;
+}
+
+.img_feature{
+    text-align: center;
+    width: 100%;
+}
+
+.img-feature img{
+    object-fit: cover;
+}
+
+hr{
+    color: gray;
+    width: 90%;
+}
+/* Fin Features section */
+
+/* Mentions section */
+
+.mention_title{
+    text-align: center;
+}
+
+.mentions{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.person{
+     width: 239px;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.person_content{
+    overflow: hidden;
+    max-width: 240px;
+}
+
+.person_content h3,
+.person_content p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.person_content h3{
+    margin-left: 5px;
+}
+
+.person_content p{
+    margin: 5px;
+    font-size: 12px;
+}
+
+/* Fin mentions section */
+
+/* Footer */
+
+footer{
+    height: 60px;
+    background-color: #313337;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 20px;
+}
+
+/* Fin Footer */
