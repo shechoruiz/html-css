@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/animation.css">
     <title>Proyecto Paypal</title>
 </head>
 <body>
     <!-- Aqui empieza el navbar -->
-    <nav>
+    <nav class="fadeInDown">
         <div class="brand_image">
             <img src="/images/logo.png" alt="">
         </div>
@@ -19,31 +22,36 @@
             </ul>
         </div>
     </nav>
-    <section class="main_section">
+    <!-- Aqui finaliza el navbar -->
+    <!-- Incio del hero -->
+    <section class="main_section fadeIn">
         <h1>Este es un producto increible, no se que haces viendo lo que puedes tener.</h1>
     </section>
+    <!-- Inicio de los productos -->
     <section class="products">
-        <div class="product">
+        <div class="product fadeInUp">
             <div class="content">
                 <div class="img_content">
                     <img src="images/box2.png" alt="">
                 </div>
                 <h2>Producto 1</h2>
                 <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos.</p>
-                <button class="button">Lo quiero</button>
+                <a href="venta.html"><button class="button">Lo quiero</button></a>
             </div>
         </div>
-        <div class="product">
+        <div class="product fadeInUp">
             <div class="content">
                 <div class="img_content">
                     <img src="images/box1.png" alt="">
                 </div>
                 <h2>Producto 2</h2>
                 <p>Miles de productos hay en el mercado, pero nada como una caja con humanos.</p>
-                <button class="button">Lo quiero</button>
+                <a href="venta.html"><button class="button">Lo quiero</button></a>
             </div>
         </div>
     </section>
+    <!-- Finalización de los productos -->
+    <!-- Inicio de los features -->
     <section class="features">
         <div class="feature">
             <div class="feature_content">
@@ -73,7 +81,9 @@
             </div>
         </div>
     </section>
+    <!-- Finalización de los features -->
     <hr>
+    <!-- Inicio de las menciones -->
     <section class="mention_title">
         <h2>Menciones</h2>
     </section>
@@ -101,7 +111,7 @@
                 <div class="img_person">
                     <img src="images/p3.png" alt="">
                 </div>
-                <h3>Joe</h3>
+                <h3>Moana</h3>
                 <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos.</p>
             </div>
         </div>
@@ -115,9 +125,11 @@
             </div>
         </div>
     </section>
+    <!-- Finalización de las menciones -->
+    <!-- Inicio del footer -->
     <footer>
         <a href="">Terminos y condiciones</a>
-        <a href="">contacto@contacto.com</a>
+        <a href="mailto:contacto@contacto.com">contacto@contacto.com</a>
     </footer>
     <script src="scripts/scripts.js"></script>
 </body>
